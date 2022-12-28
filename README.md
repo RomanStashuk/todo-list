@@ -1,5 +1,5 @@
 # todo-list
-:ledger::bookmark::books: Simple todo list web app to save and manage todos
+:ledger::white_check_mark::pushpin: Simple todo list web app to save and manage todos
 ## Usage
 - Clone the repo:
 ```bash
