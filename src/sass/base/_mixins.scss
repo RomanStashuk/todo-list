@@ -17,20 +17,3 @@
     @content;
   }
 }
-
-// Retina displays
-
-@mixin retina($density: 2) {
-  @media only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: ($density + dppx)) {
-    @content;
-  }
-}
-
-// Devices with mouse (not touch)
-
-@mixin not-touch {
-  @media (hover: hover) and (pointer: fine) {
-    @content;
-  }
-}
