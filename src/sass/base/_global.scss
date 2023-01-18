@@ -9,6 +9,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 ul[class],
@@ -66,12 +67,17 @@ dd {
 }
 
 .container {
+  display: grid;
   width: 100%;
   max-width: $desktop-width;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 10px;
 
   @include for-tablet-up {
-    padding: 0 25px;
+    padding: 0 30px;
+  }
+
+  @include for-desktop-up {
+    padding: 0 40px;
   }
 }

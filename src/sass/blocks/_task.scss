@@ -1,0 +1,52 @@
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  border-bottom: 1px solid $gray--light;
+}
+
+.task__text {
+  margin: 0 10px;
+
+  @include for-tablet-up {
+    margin: 0 20px;
+  }
+}
+
+.task__btn {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  padding: 0 20px;
+
+  &--delete {
+    background: url('@/images/icons/delete.svg') center / 42% no-repeat
+      $error-color;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid $error-color;
+    }
+  }
+
+  &--done {
+    background: url('@/images/icons/do.svg') center / 50% no-repeat
+      $success-color;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid $success-color;
+    }
+  }
+
+  &--not-done {
+    background: url('@/images/icons/return.svg') center / 50% no-repeat
+      $main-color;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid $main-color;
+    }
+  }
+}

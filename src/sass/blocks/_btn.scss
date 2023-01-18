@@ -1,0 +1,20 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  user-select: none;
+  transition-duration: 300ms;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
+  }
+}

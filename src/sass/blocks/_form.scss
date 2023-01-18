@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  min-height: 48px;
+}
+
+.form__input {
+  flex-grow: 1;
+  margin-right: 8px;
+  padding: 0 12px;
+  border: 2px solid $main-color;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 1;
+  transition-duration: 300ms;
+
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1;
+    color: $gray;
+    transition-duration: 300ms;
+  }
+
+  &:focus {
+    border: 2px solid $gray;
+    outline: none;
+
+    &::placeholder {
+      opacity: 0;
+    }
+  }
+
+  @include for-tablet-up {
+    padding: 0 20px;
+    margin-right: 14px;
+  }
+}
+
+.form__btn {
+  width: 48px;
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 400;
+  color: $white;
+  background-color: $main-color;
+
+  &:hover,
+  &:focus {
+    outline: 1px solid $main-color;
+  }
+}
