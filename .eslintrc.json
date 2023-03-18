@@ -18,10 +18,10 @@
     ]
   },
   "ignorePatterns": [
-    "dist",
-    "node_modules",
-    "webpack.*",
-    "config/paths.js"
+    "dist/",
+    "node_modules/",
+    "webpack/",
+    "postcss.config.js"
   ],
   "env": {
     "browser": true,
@@ -41,7 +41,7 @@
   "settings": {
     "import/resolver": {
       "webpack": {
-        "config": "config/webpack.common.js"
+        "config": "webpack/webpack.common.js"
       }
     }
   }
