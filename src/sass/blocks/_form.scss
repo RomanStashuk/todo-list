@@ -2,18 +2,6 @@
   display: flex;
 }
 
-.form__control {
-  display: flex;
-  flex-grow: 1;
-  min-height: 48px;
-
-  &--invalid {
-    .form__input {
-      border: 2px solid $error-color;
-    }
-  }
-}
-
 .form__input {
   flex-grow: 1;
   margin-right: 8px;
@@ -43,6 +31,18 @@
   @include for-tablet-up {
     padding: 0 20px;
     margin-right: 14px;
+  }
+}
+
+.form__control {
+  display: flex;
+  flex-grow: 1;
+  min-height: 48px;
+
+  &--invalid {
+    .form__input {
+      border: 2px solid $error-color;
+    }
   }
 }
 

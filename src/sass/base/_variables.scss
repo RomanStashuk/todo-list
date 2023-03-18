@@ -2,6 +2,7 @@ $phone-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1140px;
 
+// Colors
 $white: #fff;
 $gray: #6c838b;
 $gray--dark: #444;
@@ -10,5 +11,6 @@ $main-color: #19b3b1;
 $error-color: #fe5858;
 $success-color: #45bb89;
 
-$default-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
-  rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+// Shasows
+$default-shadow: rgba(0 0 0 / 10%) 0 20px 25px -5px,
+  rgba(0 0 0 / 4%) 0 10px 10px -5px;
