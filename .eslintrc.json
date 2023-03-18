@@ -1,48 +1,27 @@
 {
-  "rules": {
-    "prefer-template": "off",
-    "no-var": 1,
-    "no-unused-vars": 1,
-    "camelcase": 1,
-    "no-nested-ternary": 1,
-    "no-console": 1,
-    "no-template-curly-in-string": 1,
-    "no-self-compare": 1,
-    "import/prefer-default-export": 0,
-    "arrow-body-style": 1,
-    "import/no-extraneous-dependencies": [
-      "off",
-      {
-        "devDependencies": false
-      }
-    ]
-  },
-  "ignorePatterns": [
-    "dist/",
-    "node_modules/",
-    "webpack/",
-    "postcss.config.js"
-  ],
+  "root": true,
   "env": {
     "browser": true,
-    "es6": true
+    "es2021": true
   },
-  "extends": [
-    "eslint:recommended",
-    "prettier"
-  ],
+  "extends": "google",
+  "overrides": [],
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "prettier"
-  ],
-  "settings": {
-    "import/resolver": {
-      "webpack": {
-        "config": "webpack/webpack.common.js"
+  "rules": {
+    "require-jsdoc": "off",
+    "max-len": [
+      "error",
+      {
+        "code": 120
       }
-    }
-  }
+    ],
+    "no-unused-vars": "warn"
+  },
+  "ignorePatterns": [
+    "webpack/",
+    "node_modules/"
+  ]
 }
