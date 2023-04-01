@@ -28,8 +28,10 @@ module.exports = merge(common, {
 
     new ESLintPlugin({
       extensions: ['.js', '.mjs', '.jsx'],
-      emitWarning: true,
       files: path.src,
+      emitWarning: false,
+      failOnWarning: false,
+      // quiet: true,
     }),
   ],
 

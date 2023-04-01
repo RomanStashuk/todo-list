@@ -18,7 +18,21 @@
         "code": 120
       }
     ],
-    "no-unused-vars": "warn"
+    "no-unused-vars": "warn",
+    "indent": [
+      "error",
+      2
+    ],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always",
+        "objects": "always",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ]
   },
   "ignorePatterns": [
     "webpack/",
