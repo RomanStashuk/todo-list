@@ -20,7 +20,10 @@ module.exports = {
       ],
     }),
 
-    new HTMLWebpackPlugin({ template: `${path.src}/index.html` }),
+    new HTMLWebpackPlugin({
+      template: `${path.src}/index.html`,
+      favicon: `${path.public}/images/favicon.png`,
+    }),
   ],
 
   resolve: {
