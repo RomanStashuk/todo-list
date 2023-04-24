@@ -32,6 +32,10 @@
         "exports": "never",
         "functions": "never"
       }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
     ]
   },
   "ignorePatterns": [
