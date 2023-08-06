@@ -1,6 +1,6 @@
-// Import of styles
-import '@/sass/index.scss';
+import 'sass/index.scss';
+import 'core-js/actual';
+import 'regenerator-runtime/runtime';
+import App from './js/components/app';
 
-import CreateTask from './js/components/create-task';
-
-new CreateTask('create-task');
+new App();
