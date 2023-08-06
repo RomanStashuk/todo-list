@@ -19,10 +19,7 @@
       }
     ],
     "no-unused-vars": "warn",
-    "indent": [
-      "error",
-      2
-    ],
+    "indent": ["error", 2],
     "comma-dangle": [
       "error",
       {
@@ -33,13 +30,8 @@
         "functions": "never"
       }
     ],
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ]
+    "object-curly-spacing": ["error", "always"],
+    "space-before-function-paren": ["error", { "anonymous": "always", "named": "never" }]
   },
-  "ignorePatterns": [
-    "webpack/",
-    "node_modules/"
-  ]
+  "ignorePatterns": ["webpack/", "node_modules/"]
 }
