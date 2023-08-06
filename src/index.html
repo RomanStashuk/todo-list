@@ -1,51 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Todo List</title>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
-  <title>Todo List</title>
-</head>
-
-<body class="page-body">
-  <h1 class="visually-hidden">Todo List</h1>
-  <div class="container">
-    <div class="app">
-      <header class="app__header">Add your first todo</header>
-      <form class="app__form  form" id="create-task" autocomplete="off">
-        <div class="form__control">
-          <label for="new-item" class="visually-hidden">New task description</label>
-          <input type="text" id="new-item" class="form__input" name="description" required minlength="3"
-            placeholder="E.g. Build a web app">
-        </div>
-        <button type="submit" class="form__btn  btn" aria-label="Add new task">+</button>
-      </form>
-      <section class="app__section todo">
-        <h2 class="app__title">Tasks - <span id="js-uncomleted-count">0</span></h2>
-        <ul class="app__list" id="js-uncompleted-tasks">
-          <li class="task">
-            <button class="task__btn  task__btn--done  btn" aria-label="The task is completed"></button>
-            <p class="task__text">Build web application</p>
-            <button class="task__btn  task__btn--delete  btn" aria-label="Delete task"></button>
-          </li>
-        </ul>
-      </section>
-      <section class="app__section done">
-        <h2 class="app__title">Completed - <span id="js-completed-count">0</span></h2>
-        <ul class="app__list" id="js-completed-tasks">
-          <li class="task">
-            <button class="task__btn  task__btn--not-done  btn" aria-label="Task not completed"></button>
-            <p class="task__text">Build react web application lorem*10 </p>
-            <button class="task__btn  task__btn--delete  btn" aria-label="Delete task"></button>
-          </li>
-        </ul>
-      </section>
+  <body class="page-body">
+    <h1 class="visually-hidden">Todo List</h1>
+    <div class="container">
+      <div class="app">
+        <header class="app__header">Add your first todo</header>
+        <form class="app__form form" id="create-task" autocomplete="off">
+          <div class="form__control">
+            <label for="new-item" class="visually-hidden">New task description</label>
+            <input
+              type="text"
+              id="new-item"
+              class="form__input"
+              name="description"
+              required
+              minlength="3"
+              maxlength="1000"
+              placeholder="E.g. Build a web app"
+            />
+          </div>
+          <button type="submit" class="form__btn btn" aria-label="Add new task">+</button>
+        </form>
+        <section class="app__section todo">
+          <h2 class="app__title">Tasks - <span id="uncomleted-count">0</span></h2>
+          <ul class="app__list" id="unfinished-tasks">
+            <li class="task">
+              <button
+                class="task__btn task__btn--done btn"
+                aria-label="The task is completed"
+              ></button>
+              <p class="task__text">Build web application</p>
+              <button class="task__btn task__btn--delete btn" aria-label="Delete task"></button>
+            </li>
+          </ul>
+        </section>
+        <section class="app__section done">
+          <h2 class="app__title">Completed - <span id="completed-count">0</span></h2>
+          <ul class="app__list" id="completed-tasks">
+            <li class="task">
+              <button
+                class="task__btn task__btn--not-done btn"
+                aria-label="Task not completed"
+              ></button>
+       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
