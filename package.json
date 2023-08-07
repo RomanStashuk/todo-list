@@ -13,7 +13,9 @@
     "stylelint": "stylelint \"src/**/*{.css,.scss}\"",
     "stylelint:fix": "npm run stylelint --fix",
     "lint": "npm run eslint && npm run stylelint",
-    "prettify": "prettier --write \"src/**/*.js\""
+    "prettify": "prettier --write \"src/**/*.js\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -46,6 +48,7 @@
   },
   "dependencies": {
     "core-js": "^3.31.1",
+    "gh-pages": "^5.0.0",
     "normalize.css": "^8.0.1",
     "regenerator-runtime": "^0.13.11"
   }
