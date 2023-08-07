@@ -17,7 +17,7 @@
     <h1 class="visually-hidden">Todo List</h1>
     <div class="container">
       <div class="app">
-        <header class="app__header">Add your first todo</header>
+        <header class="app__header">Add your tasks</header>
         <form class="app__form form" id="create-task" autocomplete="off">
           <div class="form__control">
             <label for="new-item" class="visually-hidden">New task description</label>
@@ -35,27 +35,14 @@
           <button type="submit" class="form__btn btn" aria-label="Add new task">+</button>
         </form>
         <section class="app__section todo">
-          <h2 class="app__title">Tasks - <span id="uncomleted-count">0</span></h2>
-          <ul class="app__list" id="unfinished-tasks">
-            <li class="task">
-              <button
-                class="task__btn task__btn--done btn"
-                aria-label="The task is completed"
-              ></button>
-              <p class="task__text">Build web application</p>
-              <button class="task__btn task__btn--delete btn" aria-label="Delete task"></button>
-            </li>
-          </ul>
+          <h2 class="app__title">Tasks - <span id="unfinished-count">0</span></h2>
+          <ul class="app__list" id="unfinished-tasks"></ul>
         </section>
         <section class="app__section done">
           <h2 class="app__title">Completed - <span id="completed-count">0</span></h2>
-          <ul class="app__list" id="completed-tasks">
-            <li class="task">
-              <button
-                class="task__btn task__btn--not-done btn"
-                aria-label="Task not completed"
-              ></button>
-       </div>
+          <ul class="app__list" id="completed-tasks"></ul>
+        </section>
+      </div>
     </div>
   </body>
 </html>
